@@ -173,8 +173,13 @@
     </div> {# End content #}
 
 <footer>
-<br />
-<p>{{ LICENSE_TEXT }} </p>
+
+{# Add a license footer, if LICENSE_TEXT is defined: #}
+{% if LICENSE_TEXT %}
+    <div class="license_footer">
+    <p>{{ LICENSE_TEXT }} </p>
+    </div>
+{% endif %}
 {#
 {% if articles %}
    {% set copy_date = articles[0].date.strftime('%Y') %}
