@@ -13,6 +13,7 @@
     <![endif]-->
 
     <!-- Le styles -->
+    <link href="{{ SITEURL }}/theme/tipueseach/tipuesearch.css" type="text/css" rel="stylesheet">
     <link href="{{ SITEURL }}/theme/bootstrap.min.css" type="text/css" rel="stylesheet">
     <link href="{{ SITEURL }}/theme/bootstrap.min.responsive.css" type="text/css" rel="stylesheet">
     <link href="{{ SITEURL }}/theme/local.css" type="text/css" rel="stylesheet">
@@ -62,6 +63,9 @@
         {% endfor %}
         {% endif %}
         </ul>
+        <form id="searchform" action="/search" onsubmit="return (this.elements['q'].value.length > 0)">
+            <input id="searchbox" type="text" name="q" size="12" placeholder="Search">
+        </form>
         {# </div> #}
         
     </div>
