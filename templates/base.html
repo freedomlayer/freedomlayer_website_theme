@@ -13,10 +13,10 @@
     <![endif]-->
 
     <!-- Le styles -->
-    <link href="{{ SITEURL }}/theme/bootstrap.min.css" rel="stylesheet">
-    <link href="{{ SITEURL }}/theme/bootstrap.min.responsive.css" rel="stylesheet">
-    <link href="{{ SITEURL }}/theme/local.css" rel="stylesheet">
-    <link href="{{ SITEURL }}/theme/pygments.css" rel="stylesheet">
+    <link href="{{ SITEURL }}/theme/bootstrap.min.css" type="text/css" rel="stylesheet">
+    <link href="{{ SITEURL }}/theme/bootstrap.min.responsive.css" type="text/css" rel="stylesheet">
+    <link href="{{ SITEURL }}/theme/local.css" type="text/css" rel="stylesheet">
+    <link href="{{ SITEURL }}/theme/pygments.css" type="text/css" rel="stylesheet">
 
     <!-- So Firefox can bookmark->"abo this site" -->
     {% if FEED_ALL_ATOM %}
@@ -174,12 +174,15 @@
 
 <footer>
 <br />
+<p>{{ LICENSE_TEXT }} </p>
+{#
 {% if articles %}
    {% set copy_date = articles[0].date.strftime('%Y') %}
 {% else %}
    {% set copy_date = '' %}
 {% endif %}
 <p><a href="{{ SITEURL }}">{{ SITENAME }}</a> &copy; {{ AUTHOR }} {{ copy_date }}</p>
+#}
 </footer>
 
 </div> <!-- /container -->
