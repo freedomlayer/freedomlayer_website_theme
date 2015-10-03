@@ -13,11 +13,13 @@
     <![endif]-->
 
     <!-- Le styles -->
-    <link href="{{ SITEURL }}/theme/tipueseach/tipuesearch.css" type="text/css" rel="stylesheet">
     <link href="{{ SITEURL }}/theme/bootstrap.min.css" type="text/css" rel="stylesheet">
     <link href="{{ SITEURL }}/theme/bootstrap.min.responsive.css" type="text/css" rel="stylesheet">
     <link href="{{ SITEURL }}/theme/local.css" type="text/css" rel="stylesheet">
     <link href="{{ SITEURL }}/theme/pygments.css" type="text/css" rel="stylesheet">
+
+    <link href="{{ SITEURL }}/theme/tipuesearch/tipuesearch.css" rel='stylesheet' type='text/css'>
+    {% block extra_css %}{% endblock %}
 
     <!-- So Firefox can bookmark->"abo this site" -->
     {% if FEED_ALL_ATOM %}
@@ -65,7 +67,7 @@
         </ul>
         <form id="searchform" action="{{ SITEURL }}/search.html"
             onsubmit="return (this.elements['q'].value.length > 0)">
-            <input id="searchbox" type="text" name="q" size="12" placeholder="Search">
+            <input id="tipue_search_input" type="text" name="q" size="12" placeholder="Search">
         </form>
         {# </div> #}
         
@@ -200,5 +202,6 @@
 {# <script src="{{ SITEURL }}/theme/bootstrap-collapse.js"></script> #}
 {% include "analytics.html" %}
 {% include "github.html" %} 
+{% block extra_js %}{% endblock %}
 </body>
 </html>
