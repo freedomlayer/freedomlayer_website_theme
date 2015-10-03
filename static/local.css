@@ -79,7 +79,7 @@ h3 { margin-top: 2.5em; }
 .social a[href*='twitter.com']:before {content: url('./images/icons/twitter.png'); margin-right: 2px; vertical-align: -3px;}
 
 
-/* Styling for H? titles */
+/* Styling for H? headings */
 
 h1 {
     font-size: 2.05em;
@@ -105,4 +105,10 @@ h6 {
     font-size: 1.05em;
     font-weight:normal;
     text-decoration:underline;
+}
+
+/* Vertical spacing for H? headings */
+h1, h2, h3, h4, h5, h6{
+  margin-top:40px;
+  margin-bottom:10px;
 }
