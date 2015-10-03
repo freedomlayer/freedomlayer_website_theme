@@ -14,7 +14,8 @@ http://www.tipue.com/search
 {
      font: 13px/1.6 'open sans', sans-serif;
 	color: #333;
-	padding: 12px 12px 12px 40px;
+	/* padding: 12px 12px 12px 40px; */
+	padding: 4px 4px 4px 30px;
 	width: 170px;
 	border: 1px solid #e2e2e2;
 	border-radius: 0;
@@ -23,7 +24,7 @@ http://www.tipue.com/search
      box-shadow: none; 
 	outline: 0;
 	margin: 0;
-	background: #fff url('img/search.png') no-repeat 15px 15px;
+	background: #fff url('img/search.png') no-repeat 6px 6px;
 }
 
 #tipue_search_content
