@@ -117,3 +117,10 @@ h1, h2, h3, h4, h5, h6{
   margin-top:40px;
   margin-bottom:10px;
 }
+
+/* Bot textbox for 404 page */
+#bot_text {
+	width: 50em;
+	/* height: 30em; */
+
+}
