@@ -85,6 +85,7 @@
         
         <div class="span3">
 
+            <div class="feeds">
             <div class="well" style="padding: 8px 0; background-color: #FBFBFB;">
             <ul class="nav nav-list">
                 <li class="nav-header"> 
@@ -111,20 +112,23 @@
 
             </ul>
             </div>
+            </div>
 
+            <div class="recent">
             <div class="well" style="padding: 8px 0; background-color: #FBFBFB;">
             <ul class="nav nav-list">
                 <li class="nav-header"> 
                 Recent
                 </li>
                 {% if articles %}
-                    {# Display the first DEFAULT_PAGINATION articles: #}
-                    {% for article in articles[:DEFAULT_PAGINATION] %}        
+                    {# Display the first NUM_RECENT_ARTICLES articles: #}
+                    {% for article in articles[:NUM_RECENT_ARTICLES] %}        
                         <li><a href="{{ SITEURL }}/{{ article.url }}">{{ article.title }}</a></li>
                     {% endfor %} {# For article #}
                 {% endif %} {# If articles #}
                 
             </ul>
+            </div>
             </div>
 
             {#
