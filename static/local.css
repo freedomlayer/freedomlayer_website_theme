@@ -21,7 +21,7 @@
 
 .navbar .nav > li > a { color: #49AFCD; }
 .navbar .divider-vertical { border-right: 1px solid #4D4D4D; }
-.navbar { margin-bottom: 4em; } 
+.navbar { margin-bottom: 2em; } 
 
 
 /* Styling for elements */
@@ -114,7 +114,7 @@ h6 {
 
 /* Vertical spacing for H? headings */
 h1, h2, h3, h4, h5, h6{
-  margin-top:40px;
+  margin-top:30px;
   margin-bottom:10px;
 }
 
