@@ -1,4 +1,4 @@
-# newtolife website theme
+# freedomlayer website theme
 
 Based on tuxlite_tbs
 
